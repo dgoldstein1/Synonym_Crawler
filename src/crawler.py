@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
 """
 Created by david on 10.24.2016 using 
 https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 https://www.youtube.com/watch?v=0mAGb6sCZWc
 """
 
+import sys
 from bs4 import BeautifulSoup
 from urllib import urlopen
 from treelib import Tree, Node
@@ -60,39 +62,60 @@ class ThesaurusEntry:
 			output += '\t' + synonym + '\n'
 		print output
 
-def crawl(startingWord,treeHeight,treeWidth):
+def generateTree(startingWord,treeHeight,leafWidth):
 	""" parses thesaurus entries up to treeHeight. Root node = height 0 """
-	print "generating tree.."
-	tree = Tree() 
-	root = ThesaurusEntry(startingWord,None,treeWidth)
-	tree.create_node(startingWord,root.word)
-	tree = crawlHelper(root,treeWidth,treeHeight,0,tree,0)
-	print "done."
+	totalNodes = (leafWidth ** (treeHeight + 1)) -  1
+	printProgress(0, totalNodes, prefix = 'generating tree:', barLength = 50)
+	tree = genHelper(startingWord,None,leafWidth,treeHeight,0,None)
 	return tree 
 
-def crawlHelper(currEntry,treeWidth,maxHeight,currHeight,tree,entryNum):
-	if currHeight > maxHeight-1:
-		print currHeight
+def genHelper(currWord,parent,leafWidth,treeHeight,currHeight,tree):
+	newNode = ThesaurusEntry(currWord,None,leafWidth)
+
+	if tree==None: #create root
+		tree = Tree()
+		tree.create_node(currWord,newNode.word)
+	else:
+		if tree.contains(currWord): #duplicate, do not add to tree
+			return
+		tree.create_node(currWord,newNode.word,parent=parent)
+
+	printProgress(tree.size(), (leafWidth ** (treeHeight + 1)) -  1,prefix = 'generating tree:', barLength = 50)
+
+	#stop condition if reached spec. height
+	if currHeight > treeHeight - 1:
 		return
-
-	for synonym in currEntry.synonyms:
-		url = currEntry.synonyms[synonym]
-		try:
-			newNode = ThesaurusEntry(synonym,url,treeWidth)
-			tree.create_node(newNode.word,newNode.word,parent=currEntry.word)
-			crawlHelper(newNode,treeWidth,maxHeight,currHeight + 1,tree)
-			print "Added ",entryNum
-			entryNum = entryNum + 1
-		except:
-			pass
-
 	
+	#recurse through children
+	for synonym in newNode.synonyms:
+		genHelper(synonym,currWord,leafWidth,treeHeight,currHeight + 1,tree)
+
 	return tree
 
-
+# Print iterations progress
+def printProgress (iteration, total, prefix = '', suffix = '', decimals = 1, barLength = 100):
+    """
+    taken from: http://stackoverflow.com/questions/3173320/text-progress-bar-in-the-console
+    Call in a loop to create terminal progress bar
+    @params:
+        iteration   - Required  : current iteration (Int)
+        total       - Required  : total iterations (Int)
+        prefix      - Optional  : prefix string (Str)
+        suffix      - Optional  : suffix string (Str)
+        decimals    - Optional  : positive number of decimals in percent complete (Int)
+        barLength   - Optional  : character length of bar (Int)
+    """
+    formatStr       = "{0:." + str(decimals) + "f}"
+    percents        = formatStr.format(100 * (iteration / float(total)))
+    filledLength    = int(round(barLength * iteration / float(total)))
+    bar             = '█' * filledLength + '-' * (barLength - filledLength)
+    sys.stdout.write('\r%s |%s| %s%s %s' % (prefix, bar, percents, '%', suffix)),
+    if iteration == total:
+        sys.stdout.write('\n')
+    sys.stdout.flush()
 
 if __name__ == "__main__":
-	tree = crawl("sick",6,4)
+	tree = generateTree("ambiguous",7,2)
 	tree.show(key=lambda x: x.tag, reverse=True, line_type='ascii-em')
 
 
@@ -101,6 +124,6 @@ if __name__ == "__main__":
 	#startingEntry.printEntry()
 
 
-
+ 
 	
 
