@@ -6,96 +6,108 @@ https://www.youtube.com/watch?v=0mAGb6sCZWc
 """
 
 import sys
+import time
+import random
 from bs4 import BeautifulSoup
 from urllib import urlopen
 from treelib import Tree, Node
 
-class ThesaurusEntry:
-	"""parses web and contains word and dictionary of synonyms """
 
-	def __init__(self,targetWord,targetUrl,max):
-		self.synonyms = {}
-		self.word = targetWord
-		self.definition = ""
-		self.maxEntries = max
+def scrapeDefinition(word):
+	"""parses definition of given word from online"""
+	url = 'http://www.thesaurus.com/browse/' + word + '?s=t'
+	html = urlopen(url).read()
+	soup = BeautifulSoup(html,"html.parser")
 
-		if targetUrl == None:
-			self.url = 'http://www.thesaurus.com/browse/' + targetWord + '?s=t'
-		else:
-			self.url = targetUrl
+	#get definition
+	definitionBlock = soup.find('div',{"class":"mask"})
+	if definitionBlock == None:
+		print "Could not find synonym block in parsing for URL: " + url
+		return
 
-		self.parseURL(self.url)
+	definition = ""
+	for block in definitionBlock.findAll('strong',{"class":"ttl"}):
+		definition += block.renderContents() + ", "
 
-	def parseURL(self,url):
-		"""parses synonyms and links of given thesaurs.com URL """
-		html = urlopen(url).read()
-		soup = BeautifulSoup(html,"html.parser")
+	return definition
 
-		#get definition
-		definitionBlock = soup.find('div',{"class":"mask"})
-		if definitionBlock == None:
-			print "Could not find synonym block in parsing for URL: " + url
-			exit(1)
-		for block in definitionBlock.findAll('strong',{"class":"ttl"}):
-			self.definition += block.renderContents() + ", "
+def scrapeSynonyms(word,number,tree=None):
+	"""scrapes synonyms of word from thesaurus.com"""
+	url = 'http://www.thesaurus.com/browse/' + word + '?s=t'
+	html = urlopen(url).read()
+	soup = BeautifulSoup(html,"html.parser")
 
-		#get synonym list
-		synblock = soup.find('div',{"class":"relevancy-list"}) #synonym box
-		i = 0
-		for syn in synblock.findAll('a'):
-			if i >= self.maxEntries:
-				break
-			word = syn.span.renderContents()
-			link = syn.get('href')
-			self.synonyms[word] = link
+	#get synonym list
+	synblock = soup.find('div',{"class":"relevancy-list"}) #synonym box
+	i = 0
+	synonyms = []
+	for syn in synblock.findAll('a'):
+		if i >= number:
+			break
+		word = syn.span.renderContents()			
+		if tree!=None and not tree.contains(word):				
+			synonyms.append(word)				
 			i = i + 1
 
+	return synonyms
 
 
-	def printEntry(self):
-		"""prints tabbed synonyms"""
-		output = ""
-		output += "word:" + '\t' + self.word + '\n'
-		output += "definition:" + '\t' + self.definition + '\n'
-		output += "synonyms:" + '\n'
-		for synonym in self.synonyms:
-			output += '\t' + synonym + '\n'
-		print output
 
-def generateTree(startingWord,treeHeight,leafWidth):
+def generateTree(startingWord,treeHeight=3,leafWidth=2,printOutput=True):
 	""" parses thesaurus entries up to treeHeight. Root node = height 0 """
 	totalNodes = (leafWidth ** (treeHeight + 1)) -  1
-	printProgress(0, totalNodes, prefix = 'generating tree:', barLength = 50)
-	tree = genHelper(startingWord,None,leafWidth,treeHeight,0,None)
-	return tree 
+	if printOutput:
+		printProgress(0, totalNodes)
+	tree=genHelper(startingWord,leafWidth,treeHeight,printOutput)
+	if printOutput:
+		printProgress(totalNodes, totalNodes)
+	return tree
 
-def genHelper(currWord,parent,leafWidth,treeHeight,currHeight,tree):
-	newNode = ThesaurusEntry(currWord,None,leafWidth)
-
-	if tree==None: #create root
-		tree = Tree()
-		tree.create_node(currWord,newNode.word)
-	else:
-		if tree.contains(currWord): #duplicate, do not add to tree
-			return
-		tree.create_node(currWord,newNode.word,parent=parent)
-
-	printProgress(tree.size(), (leafWidth ** (treeHeight + 1)) -  1,prefix = 'generating tree:', barLength = 50)
+def genHelper(currWord,leafWidth,treeHeight,printOutput,currHeight=0,tree=Tree(),parent=None):
+	"""recusrively parses to generate tree of specified height and width"""
 
 	#stop condition if reached spec. height
 	if currHeight > treeHeight - 1:
 		return
-	
+
+	#create root
+	if parent==None:
+		tree.create_node(currWord,currWord)
+
+	synonyms = scrapeSynonyms(currWord,leafWidth,tree)
+	for synonym in synonyms:
+		tree.create_node(synonym,synonym,parent = currWord)
+		if printOutput:
+			printProgress(tree.size(), (leafWidth ** (treeHeight + 1)) -  1)
+		
 	#recurse through children
-	for synonym in newNode.synonyms:
-		genHelper(synonym,currWord,leafWidth,treeHeight,currHeight + 1,tree)
+	for synonym in synonyms:
+		genHelper(synonym,leafWidth,treeHeight,printOutput,currHeight + 1,tree,currWord)
 
 	return tree
 
+def crawl(startingWord,tree=Tree(),treeHeight=7,currdepth=0,leafWidth=3):
+	"""crawls until n depth and returns random synonym"""
+	if currdepth==0:
+		tree.create_node(startingWord,startingWord)
+
+	if currdepth == treeHeight:
+		return [startingWord,tree]
+
+	nextWord = scrapeSynonyms(startingWord,leafWidth,tree)[random.randint(0,leafWidth-1)]
+	tree.create_node(nextWord,nextWord,parent=startingWord)
+
+	printProgress(currdepth+1,treeHeight)
+	return crawl(nextWord,tree,treeHeight,currdepth + 1,leafWidth)
+
+
+
+	
+
+
 # Print iterations progress
-def printProgress (iteration, total, prefix = '', suffix = '', decimals = 1, barLength = 100):
+def printProgress (iteration, total, prefix = 'generating tree', suffix = '', decimals = 1, barLength = 40):
     """
-    taken from: http://stackoverflow.com/questions/3173320/text-progress-bar-in-the-console
     Call in a loop to create terminal progress bar
     @params:
         iteration   - Required  : current iteration (Int)
@@ -115,13 +127,20 @@ def printProgress (iteration, total, prefix = '', suffix = '', decimals = 1, bar
     sys.stdout.flush()
 
 if __name__ == "__main__":
-	tree = generateTree("ambiguous",7,2)
-	tree.show(key=lambda x: x.tag, reverse=True, line_type='ascii-em')
 
+	start_time = time.time()
+
+	word = "mean"
+	leafWidth = 2
+	treeHeight = 5
+
+	generateTree(word,leafWidth=leafWidth,treeHeight=treeHeight).show(key=lambda x: x.tag, reverse=True, line_type='ascii-em')	
+	crawl(word,leafWidth=leafWidth,treeHeight=treeHeight)[1].show(key=lambda x: x.tag, reverse=True, line_type='ascii-em')
+
+	print("\n")
+	print("--- executed in %s seconds ---" % (time.time() - start_time))
 
 	#root = ThesaurusEntry("sick",None,10)
-
-	#startingEntry.printEntry()
 
 
  
