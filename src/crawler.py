@@ -14,7 +14,10 @@ from treelib import Tree, Node
 
 
 def scrapeDefinition(word):
-	"""parses definition of given word from online"""
+	"""parses definition of given word from online
+	@params:
+	    word 			- Required  : starting point in thesaurus.com (string)
+    """
 	url = 'http://www.thesaurus.com/browse/' + word + '?s=t'
 	html = urlopen(url).read()
 	soup = BeautifulSoup(html,"html.parser")
@@ -32,7 +35,13 @@ def scrapeDefinition(word):
 	return definition
 
 def scrapeSynonyms(word,number,tree=None):
-	"""scrapes synonyms of word from thesaurus.com"""
+	"""
+	scrapes synonyms of word from thesaurus.com
+	@params:
+	    word 			- Required  : starting point in thesaurus.com (string)
+	    number 		    - Required  : number of synonyms to scrape (int)
+	    tree 		   	- Optional  : specify tree to avoid repeating synonyms in tree  (treelib.Tree)
+    """
 	url = 'http://www.thesaurus.com/browse/' + word + '?s=t'
 	html = urlopen(url).read()
 	soup = BeautifulSoup(html,"html.parser")
@@ -51,10 +60,15 @@ def scrapeSynonyms(word,number,tree=None):
 
 	return synonyms
 
-
-
 def generateTree(startingWord,treeHeight=3,leafWidth=2,printOutput=True):
-	""" parses thesaurus entries up to treeHeight. Root node = height 0 """
+	"""
+	parses thesaurus entries up to treeHeight. Root node = height 0 
+	@params:
+        startingWord   	- Required  : starting point in thesaurus.com (string)
+        treeHeight      - Optional  : depth of crawl (int)
+        leafWidth    	- Optional  : children considered at each iteration (int)
+        printOutput     - Optional  : prints % progress after each iteration (bool)    
+	"""
 	totalNodes = (leafWidth ** (treeHeight + 1)) -  1
 	if printOutput:
 		printProgress(0, totalNodes)
@@ -64,8 +78,9 @@ def generateTree(startingWord,treeHeight=3,leafWidth=2,printOutput=True):
 	return tree
 
 def genHelper(currWord,leafWidth,treeHeight,printOutput,currHeight=0,tree=Tree(),parent=None):
-	"""recusrively parses to generate tree of specified height and width"""
-
+	"""
+	recusrively parses to generate tree of specified height and width
+	"""
 	#stop condition if reached spec. height
 	if currHeight > treeHeight - 1:
 		return
@@ -87,7 +102,15 @@ def genHelper(currWord,leafWidth,treeHeight,printOutput,currHeight=0,tree=Tree()
 	return tree
 
 def crawl(startingWord,tree=Tree(),treeHeight=7,currdepth=0,leafWidth=3):
-	"""crawls until n depth and returns random synonym"""
+	"""
+	crawls until n depth and returns random synonym
+    @params:
+        startingWord   	- Required  : starting point in thesaurus.com (string)
+        tree       		- Optional  : specified tree to add on to (treelib.Tree)
+        treeHeight      - Optional  : depth of crawl (int)
+        currdepth      	- Optional  : start on specified depth (int)
+        leafWidth    	- Optional  : children considered at each iteration (int)
+	"""
 	if currdepth==0:
 		tree.create_node(startingWord,startingWord)
 
@@ -100,12 +123,6 @@ def crawl(startingWord,tree=Tree(),treeHeight=7,currdepth=0,leafWidth=3):
 	printProgress(currdepth+1,treeHeight)
 	return crawl(nextWord,tree,treeHeight,currdepth + 1,leafWidth)
 
-
-
-	
-
-
-# Print iterations progress
 def printProgress (iteration, total, prefix = 'generating tree', suffix = '', decimals = 1, barLength = 40):
     """
     Call in a loop to create terminal progress bar
@@ -137,10 +154,8 @@ if __name__ == "__main__":
 	generateTree(word,leafWidth=leafWidth,treeHeight=treeHeight).show(key=lambda x: x.tag, reverse=True, line_type='ascii-em')	
 	crawl(word,leafWidth=leafWidth,treeHeight=treeHeight)[1].show(key=lambda x: x.tag, reverse=True, line_type='ascii-em')
 
-	print("\n")
-	print("--- executed in %s seconds ---" % (time.time() - start_time))
+	print('\n', "--- executed in %s seconds ---" % (time.time() - start_time))
 
-	#root = ThesaurusEntry("sick",None,10)
 
 
  
