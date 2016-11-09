@@ -1,1 +1,965 @@
-generating tree |████████████████████████████████████████| 100.0% mean╠══ selfish║   ╠══ self-centered║   ║   ╠══ egotistical║   ║   ║   ╠══ smug║   ║   ║   ║   ╠══ pompous║   ║   ║   ║   ╚══ complacent║   ║   ║   ╚══ self-important║   ║   ║       ╠══ cocky║   ║   ║       ╚══ arrogant║   ║   ╚══ egocentric║   ║       ╠══ self-serving║   ║       ║   ╠══ subjective║   ║       ║   ╚══ boastful║   ║       ╚══ individualistic║   ║           ╠══ self-absorbed║   ║           ╚══ conceited║   ╚══ narcissistic║       ╠══ self-involved║       ║   ╠══ snobbish║       ║   ║   ╠══ snooty║       ║   ║   ╚══ haughty║       ║   ╚══ affected║       ║       ╠══ impressed║       ║       ╚══ distressed║       ╚══ egotistic║           ╠══ autocratic║           ║   ╠══ imperious║           ║   ╚══ domineering║           ╚══ aloof║               ╠══ unsympathetic║               ╚══ standoffish╚══ greedy    ╠══ rapacious    ║   ╠══ voracious    ║   ║   ╠══ ravenous    ║   ║   ║   ╠══ covetous    ║   ║   ║   ╚══ avaricious    ║   ║   ╚══ insatiable    ║   ║       ╠══ urgent    ║   ║       ╚══ insistent    ║   ╚══ ferocious    ║       ╠══ savage    ║       ║   ╠══ turbulent    ║       ║   ╚══ harsh    ║       ╚══ murderous    ║           ╠══ devastating    ║           ╚══ deadly    ╚══ hungry        ╠══ keen        ║   ╠══ fierce        ║   ║   ╠══ passionate        ║   ║   ╚══ bold        ║   ╚══ avid        ║       ╠══ fanatical        ║       ╚══ devoted        ╚══ eager            ╠══ thirsty            ║   ╠══ inclined            ║   ╚══ impatient            ╚══ restless                ╠══ troubled                ╚══ fidgetygenerating tree |████████████████████████████████████████| 100.0% mean╚══ selfish    ╚══ self-centered        ╚══ egocentric            ╚══ individualistic                ╚══ self-absorbed
+
+Crawling |XXXXXXXX--------------------------------| 20.0% 
+Crawling |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Crawling |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Crawling |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Crawling |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['cord', 'rope, ', ['twine', 'string', 'tendon', 'connection', 'link']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['tendon', 'band of tissue, ', ['hamstring', 'sinew', 'band', 'tissue', 'ligament']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['ligament', 'knot, ligature, link, tie, yoke, tendon, vinculum, ', ['screw', 'tangle', 'nexus', 'contortion', 'twist']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['screw', 'twist in, twist, contort, pressure, ', ['tighten', 'turn', 'work', 'spiral', 'wind']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['work', 'labor, chore, business, occupation, achievement, be employed; exert oneself, manipulate, operate, cultivate, form, ', ['task', 'industry', 'trial', 'job', 'production']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['trial', 'experimental, test, legal proceeding, trouble, big problem, ', ['preliminary', 'test', 'balloon', 'testing', 'pilot']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['balloon', 'inflated material or vehicle, billow out; bloat, ', ['blimp', 'dirigible', 'bladder', 'airship', 'zeppelin']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['blimp', 'airship, ', ['aircraft']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['bladder', 'pouch, ', ['sac', 'pocket', 'vesicle', 'blister', 'bag']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['sac', 'bag, ', ['cyst', 'cavity', 'sack', 'pouch', 'bursa']]
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['bladder', 'pouch, ', ['sac', 'pocket', 'vesicle', 'blister', 'bag']]
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['balloon', 'inflated material or vehicle, billow out; bloat, ', ['blimp', 'dirigible', 'bladder', 'airship', 'zeppelin']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           │       ├── UFO
+│   │   │   │           │       ├── flying machine
+│   │   │   │           │       ├── flying saucer
+│   │   │   │           │       ├── helicopter
+│   │   │   │           │       └── jet
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['zeppelin', 'aircraft, balloon, blimp, craft, dirigible, ', ['helicopter', 'jet', 'UFO', 'flying machine', 'flying saucer']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXX----------------| 60.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------| 80.0% 
+Generating Children |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX| 100.0% 
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           │       ├── UFO
+│   │   │   │           │       ├── flying machine
+│   │   │   │           │       ├── flying saucer
+│   │   │   │           │       │   ├── extraterrestrial spacecraft
+│   │   │   │           │       │   ├── extraterrestrial vessel
+│   │   │   │           │       │   ├── spacecraft
+│   │   │   │           │       │   ├── spaceship
+│   │   │   │           │       │   └── unidentified flying object
+│   │   │   │           │       ├── helicopter
+│   │   │   │           │       └── jet
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['flying saucer', 'spaceship, ', ['spacecraft', 'unidentified flying object', 'spaceship', 'extraterrestrial spacecraft', 'extraterrestrial vessel']]
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           │       ├── UFO
+│   │   │   │           │       ├── flying machine
+│   │   │   │           │       ├── flying saucer
+│   │   │   │           │       │   ├── extraterrestrial spacecraft
+│   │   │   │           │       │   ├── extraterrestrial vessel
+│   │   │   │           │       │   ├── spacecraft
+│   │   │   │           │       │   ├── spaceship
+│   │   │   │           │       │   └── unidentified flying object
+│   │   │   │           │       ├── helicopter
+│   │   │   │           │       └── jet
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['spaceship', 'flying saucer, rocket, UFO, rocket ship, space capsule, unidentified flying object, ', []]
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           │       ├── UFO
+│   │   │   │           │       ├── flying machine
+│   │   │   │           │       ├── flying saucer
+│   │   │   │           │       │   ├── extraterrestrial spacecraft
+│   │   │   │           │       │   ├── extraterrestrial vessel
+│   │   │   │           │       │   ├── spacecraft
+│   │   │   │           │       │   ├── spaceship
+│   │   │   │           │       │   └── unidentified flying object
+│   │   │   │           │       ├── helicopter
+│   │   │   │           │       └── jet
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['flying saucer', 'spaceship, ', ['spacecraft', 'unidentified flying object', 'spaceship', 'extraterrestrial spacecraft', 'extraterrestrial vessel']]
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           │       ├── UFO
+│   │   │   │           │       ├── flying machine
+│   │   │   │           │       ├── flying saucer
+│   │   │   │           │       │   ├── extraterrestrial spacecraft
+│   │   │   │           │       │   ├── extraterrestrial vessel
+│   │   │   │           │       │   ├── spacecraft
+│   │   │   │           │       │   ├── spaceship
+│   │   │   │           │       │   └── unidentified flying object
+│   │   │   │           │       ├── helicopter
+│   │   │   │           │       └── jet
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['zeppelin', 'aircraft, balloon, blimp, craft, dirigible, ', ['helicopter', 'jet', 'UFO', 'flying machine', 'flying saucer']]
+Generating Children |XXXXXXXX--------------------------------| 20.0% 
+Generating Children |XXXXXXXXXXXXXXXX------------------------| 40.0% fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           │       ├── UFO
+│   │   │   │           │       │   ├── rocket
+│   │   │   │           │       │   └── rocketship
+│   │   │   │           │       ├── flying machine
+│   │   │   │           │       ├── flying saucer
+│   │   │   │           │       │   ├── extraterrestrial spacecraft
+│   │   │   │           │       │   ├── extraterrestrial vessel
+│   │   │   │           │       │   ├── spacecraft
+│   │   │   │           │       │   ├── spaceship
+│   │   │   │           │       │   └── unidentified flying object
+│   │   │   │           │       ├── helicopter
+│   │   │   │           │       └── jet
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['UFO', 'unidentified flying object, ', ['rocket', 'rocketship']]
+fiber
+├── cord
+│   ├── connection
+│   ├── link
+│   ├── string
+│   ├── tendon
+│   │   ├── band
+│   │   ├── hamstring
+│   │   ├── ligament
+│   │   │   ├── contortion
+│   │   │   ├── nexus
+│   │   │   ├── screw
+│   │   │   │   ├── spiral
+│   │   │   │   ├── tighten
+│   │   │   │   ├── turn
+│   │   │   │   ├── wind
+│   │   │   │   └── work
+│   │   │   │       ├── industry
+│   │   │   │       ├── job
+│   │   │   │       ├── production
+│   │   │   │       ├── task
+│   │   │   │       └── trial
+│   │   │   │           ├── balloon
+│   │   │   │           │   ├── airship
+│   │   │   │           │   ├── bladder
+│   │   │   │           │   │   ├── bag
+│   │   │   │           │   │   ├── blister
+│   │   │   │           │   │   ├── pocket
+│   │   │   │           │   │   ├── sac
+│   │   │   │           │   │   │   ├── bursa
+│   │   │   │           │   │   │   ├── cavity
+│   │   │   │           │   │   │   ├── cyst
+│   │   │   │           │   │   │   ├── pouch
+│   │   │   │           │   │   │   └── sack
+│   │   │   │           │   │   └── vesicle
+│   │   │   │           │   ├── blimp
+│   │   │   │           │   │   └── aircraft
+│   │   │   │           │   ├── dirigible
+│   │   │   │           │   └── zeppelin
+│   │   │   │           │       ├── UFO
+│   │   │   │           │       │   ├── rocket
+│   │   │   │           │       │   └── rocketship
+│   │   │   │           │       ├── flying machine
+│   │   │   │           │       ├── flying saucer
+│   │   │   │           │       │   ├── extraterrestrial spacecraft
+│   │   │   │           │       │   ├── extraterrestrial vessel
+│   │   │   │           │       │   ├── spacecraft
+│   │   │   │           │       │   ├── spaceship
+│   │   │   │           │       │   └── unidentified flying object
+│   │   │   │           │       ├── helicopter
+│   │   │   │           │       └── jet
+│   │   │   │           ├── pilot
+│   │   │   │           ├── preliminary
+│   │   │   │           ├── test
+│   │   │   │           └── testing
+│   │   │   ├── tangle
+│   │   │   └── twist
+│   │   ├── sinew
+│   │   └── tissue
+│   └── twine
+├── grain
+├── grit
+├── thread
+└── web
+
+displaying:  ['UFO', 'unidentified flying object, ', ['rocket', 'rocketship']]
