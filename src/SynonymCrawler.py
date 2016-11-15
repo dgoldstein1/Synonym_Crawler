@@ -14,6 +14,11 @@ sys.setdefaultencoding('utf-8')
 
 
 class SynonymCrawler():
+	"""
+	Scraper which recursively finds definitions / synonyms of words online
+	and stores them in a tree.
+	"""
+
 	def __init__(self,word,leafWidth=2,treeHeight=5):
 
 		#init instance variables
@@ -28,10 +33,13 @@ class SynonymCrawler():
 
 	def step(self,chosen_word):
 		""" 
-		called by GUI
-		processes chosen word by user
-		returns true if target word
-		else returns [currWord,definition,synonyms] to be displayed
+		generates children of one leaf from given word (used by GUI)
+
+		@params:
+	        chosen_word	- Required	: word inputted by user to generate children
+
+		@return True (if target word)
+		@return [currWord,definition,synonyms]
 		"""
 		if chosen_word not in self.tree:
 			print chosen_word, " not in Tree"
@@ -48,9 +56,8 @@ class SynonymCrawler():
 		for node in self.tree.children(chosen_word):
 			synonyms.append(node.tag)
 
-		self.tree.show()
-
-		print "displaying: ", [self.currWord,self.currDefinition,synonyms]
+		#self.tree.show()
+		#print "displaying: ", [self.currWord,self.currDefinition,synonyms]
 
 		return [self.currWord,self.currDefinition,synonyms]
 
@@ -58,6 +65,7 @@ class SynonymCrawler():
 		"""parses definition of given word from online
 		@params:
 		    word 			- Required  : starting point in thesaurus.com (string)
+		@return definition (string)
 	    """
 		url = 'http://www.thesaurus.com/browse/' + word + '?s=t'
 		html = urlopen(url).read()
@@ -82,6 +90,8 @@ class SynonymCrawler():
 		    word 			- Required  : starting point in thesaurus.com (string)
 		    number 		    - Required  : number of synonyms to scrape (int)
 		    tree 		   	- Optional  : specify tree to avoid repeating synonyms in tree  (treelib.Tree)
+
+		@return synonyms (string[])
 	    """
 		url = 'http://www.thesaurus.com/browse/' + word + '?s=t'
 		html = urlopen(url).read()
@@ -109,7 +119,8 @@ class SynonymCrawler():
 	        startingWord   	- Required  : starting point in thesaurus.com (string)
 	        treeHeight      - Optional  : depth of crawl (int)
 	        leafWidth    	- Optional  : children considered at each iteration (int)
-	        printOutput     - Optional  : prints % progress after each iteration (bool)    
+	        printOutput     - Optional  : prints % progress after each iteration (bool) 
+        @return tree (treelib.Tree)   
 		"""
 		totalNodes = (leafWidth ** (treeHeight + 1)) -  1
 		if printOutput:
@@ -122,6 +133,15 @@ class SynonymCrawler():
 	def __genChildren(self,currWord,nIterations,tree=Tree(),printOutput=True,currHeight=0,parent=None,nodesCreated=0):
 		"""
 		recusrively parses to generate tree of specified height and width
+		@params:
+	        currWord 	  	- Required  : starting point in thesaurus.com (string)
+	        nIterations     - Required  : depth of crawl (int)
+	        tree    		- Optional  : starting tree (treelib.Tree)
+	        printOutput     - Optional  : prints % progress after each iteration (bool)    
+	        currHeight		- Optional	: starting deptth (int)
+	        parent			- Optional	: parent of starting node (treelib.Node)
+	        nodesCreated	- Optional	: # nodes already created for this branch of tree (int)
+	    @return tree (treelib.Tree)
 		"""
 		#stop condition if reached spec. height
 		if currHeight > nIterations - 1:
@@ -153,6 +173,7 @@ class SynonymCrawler():
 	        startingWord   	- Required  : starting point in thesaurus.com (string)
 	        tree       		- Optional  : specified tree to add on to (treelib.Tree)
 	        currdepth      	- Optional  : start on specified depth (int)
+       	@return tree (treelib.Tree)
 		"""
 		if currdepth==0:
 			tree.create_node(startingWord,startingWord)
@@ -186,7 +207,7 @@ def printProgress (iteration, total, prefix = 'generating tree', suffix = '', de
     formatStr       = "{0:." + str(decimals) + "f}"
     percents        = formatStr.format(100 * (iteration / float(total)))
     filledLength    = int(round(barLength * iteration / float(total)))
-    bar             = 'X' * filledLength + '-' * (barLength - filledLength)
+    bar             = '>' * filledLength + '-' * (barLength - filledLength)
     sys.stdout.write('\r%s |%s| %s%s %s' % (prefix, bar, percents, '%', suffix)),
     if iteration == total:
         sys.stdout.write('\n')
@@ -194,15 +215,9 @@ def printProgress (iteration, total, prefix = 'generating tree', suffix = '', de
 
 if __name__ == "__main__":
 	start_time = time.time()
-	craler = SynonymCrawler("mean")
+	crawler = SynonymCrawler("mean")
 	print("--- executed in %s seconds ---" % (time.time() - start_time))
-"""
 
-	generateTree(word,leafWidth=leafWidth,treeHeight=treeHeight).show(key=lambda x: x.tag, reverse=True, line_type='ascii-em')	
-	crawl(word,leafWidth=leafWidth,treeHeight=treeHeight)[1].show(key=lambda x: x.tag, reverse=True, line_type='ascii-em')
-
-
-	"""
 
 
 
